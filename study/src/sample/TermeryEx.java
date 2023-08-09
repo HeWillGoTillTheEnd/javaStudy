@@ -6,5 +6,6 @@ public class TermeryEx {
         int y;
         y = (x ==1) ? 10 : 20;
         System.out.println("y = " + y);
+        //commit
     }
 }
