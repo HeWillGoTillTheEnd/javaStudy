@@ -6,5 +6,6 @@ public class SingletonTest {
         Singleton singleton2 = Singleton.getSingleton();
         System.out.println(singleton2);
         System.out.println(singleton);
+        byte bytevalue = 10;
     }
 }
