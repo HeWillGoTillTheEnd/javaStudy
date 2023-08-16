@@ -3,7 +3,7 @@ package sample3;
 public class Circle {
     double radius;
     String color;
-    double findArea(){
+    public double findArea(){
         return 3.14 * radius * radius;
     }
     public Circle(double radius){
@@ -15,11 +15,15 @@ public class Circle {
         this.color = color;
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
     public Circle(String color) {
         this.color = color;
     }
 
-    void show(double x, double y){
+    public void show(double x, double y){
         System.out.printf("반지름 = %.1f, 넓이 = %.1f\n",x,y);
     }
     public void setRadius(double radius){
