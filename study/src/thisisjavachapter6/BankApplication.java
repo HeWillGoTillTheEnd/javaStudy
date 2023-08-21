@@ -82,6 +82,14 @@ public class BankApplication {
     private static void createAccount(Scanner sc) {
         System.out.println("계좌번호: ");
         String acnum = sc.nextLine();
+        for (Account account1 : account) {
+            if(account1.getAccountNum().equals(acnum)){
+                System.out.println("동일한 계좌번호가 이미 존재합니다.");
+                System.out.println("결과: 계좌생성에 실패하였습니다.");
+
+                return;
+            }
+        }
         System.out.println("계좌주: ");
         String acname = sc.nextLine();
         System.out.println("초기입금액: ");
