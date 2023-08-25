@@ -1,3 +1,5 @@
+package chapter09;
+
 public class DiceTest {
     public static void main(String[] args) throws InterruptedException {
         System.out.println(new Dice().roll());

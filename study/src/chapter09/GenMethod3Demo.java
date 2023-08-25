@@ -1,3 +1,5 @@
+package chapter09;
+
 public class GenMethod3Demo {
     public static <T extends Comparable> int countGT(T[] a, T elem){
         int count = 0;
